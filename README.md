@@ -28,39 +28,39 @@ The project goal is to utilize the machine learning skills and its techniques to
 
 The data is stored in profiles.csv provided by codecademy. The dataset provided has the following columns of multiple-choice data:
 
-age: continuous variable of users age
-body_type: categorical variable of body type of user
-diet: categorical variable of dietary information
-drinks: categorical variable of alcohol consumption
-drugs: categorical variable of drug usage
-education: categorical variable of educational attainment
-ethnicity: categorical variable of ethnic backgrounds
-height: continuous variable of height of user
-income: continuous variable of income of user
-job: categorical variable of employment description
-offspring: categorical variable of children status
-orientation: categorical variable of sexual orientation
-pets: categorical variable of pet preferences
-religion: categorical variable of religious background
-sex: categorical variable of gender
-sign: categorical variable of astrological symbol
-smokes: categorical variable of smoking consumption
-speaks: categorical variable of language spoken
-status: categorical variable of relationship status
-last_online: date variable of last login
-location: categorical variable of user locations
-And a set of open short-answer responses to :
+- age: continuous variable of users age
+- body_type: categorical variable of body type of user
+- diet: categorical variable of dietary information
+- drinks: categorical variable of alcohol consumption
+- drugs: categorical variable of drug usage
+- education: categorical variable of educational attainment
+- ethnicity: categorical variable of ethnic backgrounds
+- height: continuous variable of height of user
+- income: continuous variable of income of user
+- job: categorical variable of employment description
+- offspring: categorical variable of children status
+- orientation: categorical variable of sexual orientation
+- pets: categorical variable of pet preferences
+- religion: categorical variable of religious background
+- sex: categorical variable of gender
+- sign: categorical variable of astrological symbol
+- smokes: categorical variable of smoking consumption
+- speaks: categorical variable of language spoken
+- status: categorical variable of relationship status
+- last_online: date variable of last login
+- location: categorical variable of user locations
 
-essay0: My self summary
-essay1: What I’m doing with my life
-essay2: I’m really good at
-essay3: The first thing people usually notice about me
-essay4: Favorite books, movies, show, music, and food
-essay5: The six things I could never do without
-essay6: I spend a lot of time thinking about
-essay7: On a typical Friday night I am
-essay8: The most private thing I am willing to admit
-essay9: You should message me if…
+And a set of open short-answer responses to :
+- essay0: My self summary
+- essay1: What I’m doing with my life
+- essay2: I’m really good at
+- essay3: The first thing people usually notice about me
+- essay4: Favorite books, movies, show, music, and food
+- essay5: The six things I could never do without
+- essay6: I spend a lot of time thinking about
+- essay7: On a typical Friday night I am
+- essay8: The most private thing I am willing to admit
+- essay9: You should message me if…
 
 ### Analysis
 
