@@ -1,23 +1,30 @@
 # MACHINE_LEARNING_PORTFOLIO_PROJECT : OK_Cupid_Date_A_Scientist
 This is a walkthrough project for codecademy data science career path. This project will apply machine learning algorithms to the OKCupid Date a Scientist dataset
 
-CODECADEMY WALKTHROUGH MACHINE LEARNING PORTFOLIO PROJECT: OKCUPID DATE A SCIENTIST
+## CODECADEMY WALKTHROUGH MACHINE LEARNING PORTFOLIO PROJECT: OKCUPID DATE A SCIENTIST
 
-INTRODUCTION
+### Introduction
 
 In recent years, there has been a massive rise in the usage of dating apps to find love. Many of these apps use sophisticated data science techniques to recommend possible matches to users and to optimize the user experience. These apps give us access to a wealth of information that we’ve never had before about how different people experience romance.
 
 This portfolio project will analyze some data from OKCupid, an app that focuses on using multiple choice and short answers to match users.
 
-SCOPING
+
+### Project Overview
+
+This project explores whether machine learning models can predict users’ zodiac signs using profile data from a dating application. The dataset includes lifestyle behaviors, demographic attributes, and free-text personal essays.
+
+The motivation was to assess whether zodiac signs—often associated with personality traits—can be inferred from observable user behavior and self-descriptions.
+
+### Scoping
 
 Project scoping creates a structure for the entire project. This includes stating the goals for the project, gathering the data, considering the analytical steps required through analysis and evaluation which will help build conclusions and findings from the analysis. A proper project scope can be a great road map for any project.
 
-PROJECT GOALS
+### Project Goals
 
 The project goal is to utilize the machine learning skills and its techniques to the OKCupid App User Profile dataset. Zodiac symbols are important for many users, but some users don’t add them in. This project will classify Zodiac signs using drinking, smoking, drugs, and essays as the features and will predict a user’s zodiac signs so we can guess the missing zodiacs when we make matches.
 
-DATA
+### Data
 
 The data is stored in profiles.csv provided by codecademy. The dataset provided has the following columns of multiple-choice data:
 
@@ -55,13 +62,80 @@ essay7: On a typical Friday night I am
 essay8: The most private thing I am willing to admit
 essay9: You should message me if…
 
-ANALYSIS
+### Analysis
 
 After the data is received, summary statistics, descriptive statistics like mean, median, range, correlations,Data visualizations for univariate and multivariate exploration and short summary notes explaining insights gained from exploration. Since zodiac signs are being classified to make predictions on missing zodiac signs, machine learning classification algorithms will be implemented to solve the problem of this project.
 
-EVALUATION
+### Evaluation
 
-Once the model is created, metrics of success are used to evaluate the model performance(s). This include the use of confusion matrix and finding the accuracy, precision, recall, f1 of the model(s) used, and create graphs showing how they changed. The main components to include in the machine learning evaluation are:
+Once the model is created, metrics of success are used to evaluate the model performance(s). This include the use of confusion matrix and finding the accuracy, precision, recall, f1 of the model(s) used, and create graphs showing how they changed. 
 
-Table showing model performance
-Charts showing model performance
+### Dataset Features for Machine Learning Models
+
+Categorical: sex, body type, diet, drinks, drugs, smokes, job, education, religion
+
+Numerical: age, height
+
+Text: combined user essays (essay0–essay9)
+
+Target: zodiac sign (12 classes)
+
+### Methods & Models
+
+The following models were implemented and evaluated:
+
+Logistic Regression
+
+Linear Support Vector Machine (SVM)
+
+K-Nearest Neighbors (KNN)
+
+Decision Tree
+
+Random Forest
+
+Text data was vectorized using TF-IDF, categorical variables were one-hot encoded, and numerical features were standardized.
+
+### Results
+
+All models achieved accuracy close to random baseline (~8–9%)
+
+Confusion matrices showed no meaningful class separation
+
+Class distribution was relatively balanced
+
+Increasing model complexity did not improve performance
+
+ ### Key Findings
+
+Zodiac signs are not predictable from lifestyle, demographic, or textual profile data
+
+Poor performance was consistent across multiple model families
+
+Results suggest no statistical relationship between user behavior and zodiac signs
+
+### Conclusion
+
+Machine learning models cannot reliably infer zodiac signs from dating app profile features. Zodiac signs appear to function as arbitrary labels rather than outcomes of measurable behavioral patterns.
+
+This project demonstrates the importance of hypothesis testing, baseline comparison, and proper interpretation of negative results in machine learning.
+
+### Future Work
+
+- Predict more behavior-driven targets such as drinking or smoking habits
+
+- Explore feature importance for interpretable outcomes
+
+- Apply the pipeline to recommendation or clustering tasks
+
+### Tech Stack
+
+- Python
+
+- Pandas, NumPy
+
+- Scikit-learn
+
+- TF-IDF Vectorization
+
+- Matplotlib / Seaborn
